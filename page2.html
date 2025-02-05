@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/wvFont.css" />
+    <link rel="stylesheet" href="./css/wvCommon.css" />
+    <link rel="stylesheet" href="./css/wvUser.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="./js/wvScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <a href="./page1.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+
+            <div class="data-sourc">
+                <div class="data-sourc-title">
+                    Data Source
+                    <span class="tag">KR</span>
+                </div>
+
+                <ul>
+                    <li style="color: #A50F0F;">KR</li>
+                    <li>JP</li>
+                    <li>ID</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrap">
+            <h2>
+                <span style="color: #0163D5;">Welcome,</span>
+                World Vertex
+            </h2>
+
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Skills</h3>
+
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <span style="color: #F9A825;">★</span>
+                    My Skills
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample1')">+ Add</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <span class="round-btn"><span class="btn-star active"></span><a href="./page4.html">java</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Application Programming
+                        Interface (API) </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Databases</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Debugging</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">JavaScript (JS) </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Python</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Problem
+                        Solving </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">Software
+                        Development</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">RESTful
+                        APIs </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./page4.html">SQL</a>
+                </span>
+
+                <button type="button" class="round-btn">+ More</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section style="background-color: #FAF1F1; padding: 80px 0; margin-top: 80px;">
+        <div class="wrap">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Badges</h3>
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <span style="color: #F9A825;">★</span>
+                    Interests
+                    <button type="button" class="btn-line" onclick="openModal('modal-sample5 ')">Show All</button>
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample3')">+ Add</button>
+                </div>
+            </div>
+
+            <ul class="badges-lists">
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge1.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>IT Specialist - Java</p>
+                            <span>Certiport​</span>
+                        </div>
+                    </div>
+
+                    <a href='./page3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge2.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Data Science Foundations - Level 1</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+
+                    <a href='./page3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge3.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Web Development with HTML, CSS, JavaScript Essentials</p>
+                            <span>IBM​</span>
+                        </div>
+                    </div>
+
+                    <a href='./page3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge4.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Unity Creative Core</p>
+                            <span>Unity Technologies</span>
+                        </div>
+                    </div>
+
+                    <a href='./page3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge5.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>IBM Full Stack Software Developer Professional Certificate</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+
+                    <a href='./page3.html' class="btn-line">Details</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-top: 80px;">
+        <div class="wrap">
+            <h3>Employee Value</h3>
+
+            <div class="tab">
+                <button type="button" class="on">Skills</button>
+                <button type="button">Badges</button>
+            </div>
+
+            <div class="tab-cont" style="display: block;">
+                <p style="color: #6C6F71;">World Vertex 직원들의 스킬 보유 현황을 통해 직원 가치를 보여줍니다.​<br />
+                    관심 설정한 스킬에 대해서만 제공하며, 해당 스킬을 보유한 인재 추천을 원하실 경우 ’Talent’ 버튼을 클릭해주세요.​</p>
+                <ul class="talent-lists">
+                    <li>
+                        <p>Application Programming Interface (API)</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 25%;">25%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Databases</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 35%;">35%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Debugging</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 18%;">18%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>JavaScript (JS)</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 74%;">74%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Java</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 62%;">62%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-cont">
+                <p style="color: #6C6F71;">World Vertex 직원들의 배지 보유 현황을 통해 직원 가치를 보여줍니다.​<br />
+                    관심 설정한 배지에 대해서만 제공하며, 해당 배지를 보유한 인재 추천을 원하실 경우 ’Talent’ 버튼을 클릭해주세요.​​</p>
+                <ul class="talent-lists">
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-1.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 25%;">25%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-2.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 35%;">35%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-3.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 18%;">18%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-4.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 74%;">74%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-5.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 62%;">62%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="margin-top: 80px;">
+        <img src="./images/pc-footer.png" alt="" style="width: 100%;">
+    </footer>
+
+    <div id="modal-sample1" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample1')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    당신의 스킬을 추가하세요.<br />
+                    추가된 스킬을 바탕으로 관련 스킬과 직업 정보를 제공합니다.
+                </p>
+
+                <div class="enter-text">
+                    <button type="button" class="btn-blue-round">
+                        Python <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <input type="text" placeholder="Enter skills here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button"><img src="./images/btn-cancel.png" alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample1', 'modal-sample2')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample2" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample2')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    앞에서 선택한 스킬과 관련된 직업을 추천합니다. <br />
+                    관심 직업 선택 후 Save 버튼을 눌러주세요.
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Skills</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        Python
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning
+                    </button>
+                </div>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Suggested Occupation</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        <img src="./images/sug-badges1.png" alt="">Data Science Foundations – Level 1
+                    </button>
+                    <button type="button" class="round-btn select">
+                        <img src="./images/sug-badges2.png" alt="">Data Analysis with Python
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges3.png" alt="">Python Essentials
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges4.png" alt="">CKAD: Certified Kubernetes Application Developer
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges5.png" alt="">Data Science Foundations – Level 2
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges6.png" alt="">Data Analysis Using Python
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button"><img src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample2')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample3" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample3')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Occupations
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    관심 직업을 추가하세요.<br />
+                    설정된 직업을 바탕으로 관련 스킬과 직업 정보를 제공합니다.
+                </p>
+
+                <div class="enter-text">
+                    <input type="text" placeholder="Enter skills here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)
+                        </button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button"><img src="./images/btn-cancel.png" alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample3', 'modal-sample4')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample4" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample4')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Occupations
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    앞에서 선택한 직업과 관련된 스킬을 추천합니다. <br />
+                    제외할 스킬이 있다면 x 버튼을 사용하시고, 선택이 완료되면 Save 버튼을 눌러주세요.
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Occupation</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        Computer Systems Engineers/Architects
+                    </button>
+                </div>
+
+                <h4
+                    style="display: flex;align-items: center;justify-content: space-between;font-size: 18px; margin-bottom: 10px;">
+                    Suggested Skills
+                    <button type="button" style="color: #197DB7;" class="deselect-all">Deselect All</button>
+                </h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        Application Programming Interface (API)
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Databases
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Debugging
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        JavaScript (JS)
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Problem Solving
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Software Development
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Java
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Python
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        RESTful APIs
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        SQL
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button"><img src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample4')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample5" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample5 ')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Recommend Badges
+            </div>
+            <div class="modal-body">
+                <div style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            ">
+                    <p>전체 <strong style="color: #197DB7;">98</strong>개</p>
+
+                    <div>
+                        <button type="button">관심설정별</button> |
+                        <button type="button" class="sort-skill">스킬별</button> |
+                        <img src="./images/checkbox-list.png" alt="" class="checkbox-list" style="display: none;">
+                        <button type="button">10개씩</button>
+                    </div>
+                </div>
+
+                <ul class="badges-lists">
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge1.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>IT Specialist - Java</p>
+                                <span>Certiport&ZeroWidthSpace;</span>
+                            </div>
+                        </div>
+
+                        <a href='./page3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge2.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Data Science Foundations - Level 1</p>
+                                <span>IBM</span>
+                            </div>
+                        </div>
+
+                        <a href='./page3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge3.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Web Development with HTML, CSS, JavaScript Essentials</p>
+                                <span>IBM&ZeroWidthSpace;</span>
+                            </div>
+                        </div>
+
+                        <a href='./page3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge4.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Unity Creative Core</p>
+                                <span>Unity Technologies</span>
+                            </div>
+                        </div>
+
+                        <a href='./page3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge5.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>IBM Full Stack Software Developer Professional Certificate</p>
+                                <span>IBM</span>
+                            </div>
+                        </div>
+
+                        <a href='./page3.html' class="btn-line">Details</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="modal-foot"><img src="./images/board-paging.png" alt="" style="width: 100%;"></div>
+
+        </div>
+    </div>
+
+    <div id="modal-sample6" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample6 ')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Recommend Badges
+            </div>
+            <div class="modal-body">
+                <div style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            ">
+                    <p>전체 <strong style="color: #197DB7;">98</strong>개</p>
+
+                    <div>
+                        <button type="button">최근 등록순</button> |
+                        <button type="button" class="sort-area">지역별</button> |
+                        <img src="./images/checkboxs.png" alt="" class="checkbox-box" style="display: none;">
+                        <button type="button">인기순</button>
+                    </div>
+                </div>
+
+
+                <img src="./images/talent.png" alt="" style="width: 100%;">
+
+            </div>
+
+            <div class="modal-foot">
+                <img src="./images/board-paging.png" alt="" style="width: 100%;">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const dataToggleBtn = document.querySelector('.data-sourc');
+        dataToggleBtn.addEventListener('click', () => {
+            dataToggleBtn.classList.toggle('on');
+        });
+
+        const starBtns = document.querySelectorAll('.btn-star');
+        starBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            });
+        });
+
+        const tabBtns = document.querySelectorAll('.tab button');
+        tabBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach((btn) => {
+                    btn.classList.remove('on');
+                });
+                btn.classList.add('on');
+
+                const idx = Array.from(tabBtns).indexOf(btn);
+                const tabConts = document.querySelectorAll('.tab-cont');
+                tabConts.forEach((cont) => {
+                    cont.style.display = 'none';
+                });
+                tabConts[idx].style.display = 'block';
+            });
+        });
+
+        const inputBoxs = document.querySelectorAll('.enter-skill');
+        inputBoxs.forEach((inputBox) => {
+            inputBox.addEventListener('focus', () => {
+                const skillBox = inputBox.closest('.modal-body').querySelector('.enter-text + .lists');
+                skillBox.style.display = 'block';
+            });
+        });
+
+        const skillBtns = document.querySelectorAll('.enter-btn button');
+        skillBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('select');
+            });
+        });
+
+        const deselectAll = document.querySelector('.deselect-all');
+        deselectAll.addEventListener('click', () => {
+            const skillBtns = deselectAll.closest('.modal-body').querySelectorAll('.enter-btn button');
+            skillBtns.forEach((btn) => {
+                btn.classList.remove('select');
+            });
+        });
+
+        const sortSkill = document.querySelector('.sort-skill');
+        const sortSkillCont = document.querySelector('.checkbox-list');
+        sortSkill.addEventListener('click', () => {
+            if (sortSkillCont.style.display === 'none' || sortSkillCont.style.display === '') {
+                sortSkill.classList.add('on');
+                sortSkillCont.style.display = 'block';
+            } else {
+                sortSkill.classList.remove('on');
+                sortSkillCont.style.display = 'none';
+            }
+        });
+
+        const sortArea = document.querySelector('.sort-area');
+        const sortAreaCont = document.querySelector('.checkbox-box');
+        sortArea.addEventListener('click', () => {
+            if (sortAreaCont.style.display === 'none' || sortAreaCont.style.display === '') {
+                sortArea.classList.add('on');
+                sortAreaCont.style.display = 'block';
+            } else {
+                sortArea.classList.remove('on');
+                sortAreaCont.style.display = 'none';
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const modalCloseBtn = document.querySelectorAll(".modal-close-btn");
+            modalCloseBtn.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    if (btn.closest(".modal").querySelector('.lists')) btn.closest(".modal").querySelector('.lists').style.display = 'none';
+
+                    if (btn.closest(".modal").querySelector('.checkbox-list')) btn.closest(".modal").querySelector('.checkbox-list').style.display = 'none';
+
+                    if (btn.closest(".modal").querySelector('.checkbox-box')) btn.closest(".modal").querySelector('.checkbox-box').style.display = 'none';
+
+
+                });
+            })
+        });
+
+
+    </script>
+</body>
+
+</html>
