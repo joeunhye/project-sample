@@ -67,6 +67,7 @@ pre {
     cursor: pointer;
 }
 
+
 .data-sourc ul {
     position: absolute;
     width: 145px;
@@ -82,6 +83,10 @@ pre {
 
 .data-sourc.on ul {
     display: flex;
+}
+
+.data-sourc a {
+    text-decoration: none;
 }
 
 .data-sourc ul li {
